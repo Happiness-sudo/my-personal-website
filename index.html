@@ -1,9 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My Personal Website</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>HAPPINESS NGEETE</h2>
+    <h1>MY PERSONAL WEBSITE</h1>
+  </header>
+
+  <div class="center-nav">
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </div>
+
+  <div class="social-icons">
+    <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+    <span class="separator">•</span>
+    <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
+    <span class="separator">•</span>
+    <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp"></a>
+  </div>
+
+  <section id="about" style="display:none;">
+    <h2>About Me</h2>
+    <p>My name is Happiness Ndolo, I love coding, and I enjoy learning new things every day.</p>
+  </section>
+
+  <section id="projects" style="display:none;">
+    <h2>Projects</h2>
+    <p>Here I will showcase my GitHub projects in the future.</p>
+  </section>
+
+  <section id="contact" style="display:none;">
+    <h2>Contact</h2>
+    <p>Email: ndolohappiness@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Happiness Ngeete</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
